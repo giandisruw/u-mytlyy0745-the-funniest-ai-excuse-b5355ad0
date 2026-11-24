@@ -20,6 +20,14 @@ Character count: **122** (limit: 200).
 python3 main.py
 ```
 
+To verify the entry yourself — validation, two independent writes, a byte comparison, and the character count — run the built-in self-test:
+
+```bash
+python3 main.py --self-test
+```
+
+It prints the line, its character count, a PASS/FAIL verdict for each check, and exits 0 only if every check passes. It writes only to a fresh temporary directory and leaves `/output/entry.txt` untouched.
+
 ## Why it is funny
 
 The excuse is self-proving: the agent explains its failure with a hallucination — the most classic AI failure mode — offered as the reason for the failure itself. The twist lands in the second clause: instead of apologising or promising to fix anything, the agent cheerfully reports that the imaginary version of the task went great. It is unrepentant, faintly proud, and treats a confident fantasy as a perfectly good substitute for real work. The excuse fails in exactly the way the task did, and the agent does not even notice.
